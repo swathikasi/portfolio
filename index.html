@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Swathika K — AI & Full-Stack</title>
+<meta name="description" content="Portfolio of Swathika K, AI & Data Science undergraduate and full-stack developer.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+  <a class="brand" href="#top">Swathika K</a>
+  <nav aria-label="Main">
+    <a href="#about">About</a><a href="#projects">Projects</a><a href="#journey">Journey</a><a href="#recognition">Recognition</a><a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <canvas id="heat" aria-hidden="true"></canvas>
+    <div class="hero-text">
+      <h1>Swathika K</h1>
+      <p class="lead">AI &amp; Data Science undergraduate and full-stack developer. I build RAG pipelines, neural networks and the APIs that serve them.</p>
+      <p class="hint">Move your cursor over the grid. It lights up the way activations spread through a neural network.</p>
+      <div class="actions">
+        <a class="btn primary" href="#projects">See my projects</a>
+        <a class="btn" href="#contact">Get in touch</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="block">
+    <h2>About</h2>
+    <div class="cols">
+      <p id="summary" class="big"></p>
+      <div id="skills" class="skills"></div>
+    </div>
+  </section>
+
+  <section id="projects" class="block">
+    <h2>Projects</h2>
+    <div id="projectList" class="projects"></div>
+  </section>
+
+  <section id="journey" class="block">
+    <h2>Journey</h2>
+    <div class="cols">
+      <div><h3>Experience</h3><ol id="experience" class="timeline"></ol></div>
+      <div><h3>Education</h3><ol id="education" class="timeline"></ol></div>
+    </div>
+  </section>
+
+  <section id="recognition" class="block">
+    <h2>Recognition</h2>
+    <div class="cols">
+      <div><h3>Achievements</h3><ul id="achievements" class="plain"></ul>
+        <h3 class="gap">Leadership &amp; activities</h3><ul id="leadership" class="plain"></ul></div>
+      <div><h3>Certifications</h3><ul id="certifications" class="plain"></ul>
+        <h3 class="gap">Languages</h3><p id="languages"></p>
+        <h3 class="gap">Soft skills</h3><p id="softSkills"></p></div>
+    </div>
+  </section>
+
+  <section id="contact" class="block">
+    <h2>Contact</h2>
+    <div class="cols">
+      <div>
+        <p class="big">Looking for an intern, or have a project idea? Send a message and I’ll reply by email.</p>
+        <ul id="links" class="plain links"></ul>
+      </div>
+      <form id="contactForm" novalidate>
+        <label>Name<input name="name" autocomplete="name" required maxlength="80"></label>
+        <label>Email<input name="email" type="email" autocomplete="email" required maxlength="120"></label>
+        <label>Message<textarea name="message" rows="5" required maxlength="2000"></textarea></label>
+        <button class="btn primary" type="submit">Send message</button>
+        <p id="formStatus" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer class="foot"><p>© <span id="year"></span> Swathika K</p></footer>
+<script src="profile.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
